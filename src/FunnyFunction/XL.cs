@@ -43,7 +43,7 @@ namespace FunnyFunction
                 CurrentPoint = new Point() { X = 0, Y = 0, Fee = 0 }
             }) ;
             // 记录到达每个点的最短Fee
-            Dictionary<Point, int> pDic = new Dictionary<Point, int>();
+            Dictionary<Point, Line> pDic = new Dictionary<Point, Line>();
             while (true)
             {
                 var oldLines = list.ToArray();
@@ -61,13 +61,17 @@ namespace FunnyFunction
                     var line = list[i];
                     if (pDic.ContainsKey(line.CurrentPoint))
                     {
-                        if (pDic[line.CurrentPoint] <= line.CurrentFee)
+                        if (pDic[line.CurrentPoint].CurrentFee < line.CurrentFee)
                         {
-                            list.RemoveAt(i);
+                            if (list.Count > 1)
+                            {
+                                list.RemoveAt(i);
+                            }
+                            //list.Add(pDic[line.CurrentPoint]);
                             continue;
                         }
                     }
-                    pDic[line.CurrentPoint] = line.CurrentFee;
+                    pDic[line.CurrentPoint] = line;
                 }
                 // 若只保留一个，就是到达终点的线
                 if (list.Count <= 1)

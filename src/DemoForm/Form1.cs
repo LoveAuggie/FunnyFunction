@@ -20,6 +20,7 @@ namespace DemoForm
 
         private void btnXL_Click(object sender, EventArgs e)
         {
+            /*
             string maps = 
               @"0,1,5,2,4,5,8,2,1
                 1,5,2,4,5,8,2,9,5
@@ -30,6 +31,17 @@ namespace DemoForm
                 2,1,5,6,4,5,7,4,1
                 2,8,7,2,4,5,8,2,1
                 1,5,5,4,5,6,2,2,0";
+            */
+            string maps =
+              @"0,1,1,1,1,1,8,2,1
+                9,9,9,4,5,1,9,9,5
+                2,7,5,2,4,1,9,2,1
+                9,9,3,1,1,1,8,7,3
+                9,1,1,1,9,9,9,2,1
+                9,1,9,9,9,9,8,9,3
+                2,1,1,1,4,1,1,1,1
+                2,8,7,1,4,1,8,2,1
+                1,5,5,1,1,1,2,2,0";
 
             var arr1 = maps.Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
 
