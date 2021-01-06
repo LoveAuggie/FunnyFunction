@@ -61,5 +61,27 @@ namespace DemoForm
             XLForm frm = new XLForm(map);
             frm.ShowDialog();
         }
+
+        private void btnXL2_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            int[,] map = new int[20, 20];
+            for (int i = 0; i < 20; i++)
+            {
+                for (int j = 0; j < 20; j++)
+                {
+                    if ((i == 0 && j == 0) || (i == 19 && j == 19))
+                    {
+                        map[i, j] = 0;
+                    }
+                    else 
+                    {
+                        map[i, j] = rand.Next(1, 100) % 10;
+                    }
+                }
+            }
+            XLForm frm = new XLForm(map);
+            frm.ShowDialog();
+        }
     }
 }

@@ -13,7 +13,8 @@ namespace FunnyFunction
             //HD1.Run();
             //FE1.Run();
             //BQBJ.Run();
-            XL.Run();
+            //XL.Run();
+            CyCleDelete.Run();
             Console.ReadLine();
         }
     }

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BQBJ.cs" />
+    <Compile Include="CyCleDelete.cs" />
     <Compile Include="FE1.cs" />
     <Compile Include="HD1.cs" />
     <Compile Include="Program.cs" />

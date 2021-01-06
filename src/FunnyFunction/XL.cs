@@ -12,9 +12,8 @@ namespace FunnyFunction
         /* 思路
          * 1：记录一个线的列表
          * 2：从起点开始，向上下左右，派生新的线，并且将新的线，记录新的列表
-         * 3：对于到达同一个终点的线，进行计算，去除掉已经消费较多的线
-         * 4：一直到所有的线，都到达终点
-         * 
+         * 3：对于到达同一个终点的线，去除掉已经消费较多的线
+         * 4：一直到所有的线，都到达终点，并且保存下到终点费用最低的线
          */
 
         public static int[,] map;
@@ -67,7 +66,6 @@ namespace FunnyFunction
                             {
                                 list.RemoveAt(i);
                             }
-                            //list.Add(pDic[line.CurrentPoint]);
                             continue;
                         }
                     }
