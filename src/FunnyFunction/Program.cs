@@ -14,7 +14,8 @@ namespace FunnyFunction
             //FE1.Run();
             //BQBJ.Run();
             //XL.Run();
-            CyCleDelete.Run();
+            //CyCleDelete.Run();
+            MyEvent.Test();
             Console.ReadLine();
         }
     }
