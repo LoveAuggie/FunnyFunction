@@ -24,7 +24,9 @@ namespace FunnyFunction
             //List<int> l = arr.ToList();
             //List<int> r = Sort.SelectSort(l);
             //arr = r.ToArray();
-            Sort.ShellSort(arr);
+            //Sort.ShellSort(arr);
+            //Sort.HeapSort(arr);
+            arr= Sort.MergeSort(arr);
             Console.WriteLine("Af: " + string.Join(",", arr));
 
 
