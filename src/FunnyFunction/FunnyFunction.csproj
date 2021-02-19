@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BigNum2.cs" />
     <Compile Include="BQBJ.cs" />
     <Compile Include="CyCleDelete.cs" />
     <Compile Include="FE1.cs" />

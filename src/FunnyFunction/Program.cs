@@ -10,15 +10,14 @@ namespace FunnyFunction
     {
         static void Main(string[] args)
         {
-
             //HD1.Run();
             //FE1.Run();
             //BQBJ.Run();
             //XL.Run();
             //CyCleDelete.Run();
             //MyEvent.Test();
-            int[] arr = new int[] { 5, 19, 23, 59, 18, 47, 92, 10, 57, 23 };
-            Console.WriteLine("Be: " + string.Join(",", arr));
+            //int[] arr = new int[] { 5, 19, 23, 59, 18, 47, 92, 10, 57, 23 };
+            //Console.WriteLine("Be: " + string.Join(",", arr));
             //Sort.BubbleSort(arr);
             //arr= Sort.InsertSort(arr);
             //List<int> l = arr.ToList();
@@ -26,12 +25,20 @@ namespace FunnyFunction
             //arr = r.ToArray();
             //Sort.ShellSort(arr);
             //Sort.HeapSort(arr);
-            arr= Sort.MergeSort(arr);
-            Console.WriteLine("Af: " + string.Join(",", arr));
-
+            //arr= Sort.MergeSort(arr);
+            //Console.WriteLine("Af: " + string.Join(",", arr));
+            BigNumTest();
 
             Console.WriteLine("End");
             Console.ReadLine();
+        }
+
+        static void BigNumTest()
+        {
+            string num1 = "995.12";
+            string num2 = "11111001.22";
+
+            Console.WriteLine($"{num1} - {num2} = {BigNum.Sub(num1, num2)}");
         }
 
         static void HeatMapTest()
